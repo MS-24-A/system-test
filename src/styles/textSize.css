@@ -1,0 +1,142 @@
+/* 
+ * txt = text
+ * Number = numeber of pixeles
+ * W = view Web, M view Mobile
+ */
+
+/* Star only mobile view */
+.txt12M {
+    @apply leading-[1.5] text-[9px] sm:text-[10.5px] md:text-[12px];
+}
+.txt14M {
+    @apply leading-[1.5] text-[12px] sm:text-[13px] md:text-[14px];
+}
+.txt16M {
+    @apply leading-[1.5] text-[12px] sm:text-[14px] md:text-[16px];
+}
+.txt20M {
+    @apply leading-[1.5] text-[15px] sm:text-[17.5px] md:text-[20px];
+}
+.txt24M {
+    @apply leading-[1.5] text-[18px] sm:text-[21px] md:text-[24px];
+}
+.txt28M {
+    @apply leading-[1.5] text-[21px] sm:text-[24.5px] md:text-[28px];
+}
+.txt32M {
+    @apply leading-[1.5] text-[24px] sm:text-[28px] md:text-[32px];
+}
+.txt36M {
+    @apply leading-[1.5] text-[27px] sm:text-[31.5px] md:text-[36px];
+}
+.txt40M {
+    @apply leading-[1.5] text-[30px] sm:text-[35px] md:text-[40px];
+}
+.txt44M {
+    @apply leading-[1.5] text-[33px] sm:text-[38.5px] md:text-[44px];
+}
+.txt48M {
+    @apply leading-[1.5] text-[36px] sm:text-[42px] md:text-[48px];
+}
+.txt52M {
+    @apply leading-[1.5] text-[39px] sm:text-[45.5px] md:text-[52px];
+}
+.txt56M {
+    @apply leading-[1.5] text-[42px] sm:text-[49px] md:text-[56px];
+}
+.txt60M {
+    @apply leading-[1.5] text-[45px] sm:text-[52.5px] md:text-[60px];
+}
+.txt64M {
+    @apply leading-[1.5] text-[48px] sm:text-[56px] md:text-[64px];
+}
+.txt68M {
+    @apply leading-[1.5] text-[51px] sm:text-[59.5px] md:text-[68px];
+}
+.txt72M {
+    @apply leading-[1.5] text-[54px] sm:text-[63px] md:text-[72px];
+}
+.txt76M {
+    @apply leading-[1.5] text-[57px] sm:text-[66.5px] md:text-[76px];
+}
+.txt80M {
+    @apply leading-[1.5] text-[60px] sm:text-[70px] md:text-[80px];
+}
+/* End only mobile view */
+
+/* Star only web view */
+.txt12W {
+    @apply leading-[1.5] lg:text-[9px] xl:text-[10.5px] 2xl:text-[12px];
+}
+.txt14W {
+    @apply leading-[1.5] lg:text-[10.5px] xl:text-[12.25px] 2xl:text-[14px];
+}
+.txt16W {
+    @apply leading-[1.5] lg:text-[12px] xl:text-[14px] 2xl:text-[16px];
+}
+.txt20W {
+    @apply leading-[1.5] lg:text-[15px] xl:text-[17.5px] 2xl:text-[20px];
+}
+.txt24W {
+    @apply leading-[1.5] lg:text-[18px] xl:text-[21px] 2xl:text-[24px];
+}
+.txt28W {
+    @apply leading-[1.5] lg:text-[21px] xl:text-[24.5px] 2xl:text-[28px];
+}
+.txt32W {
+    @apply leading-[1.5] lg:text-[24px] xl:text-[28px] 2xl:text-[32px];
+}
+.txt36W {
+    @apply leading-[1.5] lg:text-[27px] xl:text-[31.5px] 2xl:text-[36px];
+}
+.txt40W {
+    @apply leading-[1.5] lg:text-[30px] xl:text-[35px] 2xl:text-[40px];
+}
+.txt44W {
+    @apply leading-[1.5] lg:text-[33px] xl:text-[38.5px] 2xl:text-[44px];
+}
+.txt48W {
+    @apply leading-[1.5] lg:text-[36px] xl:text-[42px] 2xl:text-[48px];
+}
+.txt52W {
+    @apply leading-[1.5] lg:text-[39px] xl:text-[45.5px] 2xl:text-[52px];
+}
+.txt56W {
+    @apply leading-[1.5] lg:text-[42px] xl:text-[49px] 2xl:text-[56px];
+}
+.txt60W {
+    @apply leading-[1.5] lg:text-[45px] xl:text-[52.5px] 2xl:text-[60px];
+}
+.txt64W {
+    @apply leading-[1.5] lg:text-[48px] xl:text-[56px] 2xl:text-[64px];
+}
+.txt68W {
+    @apply leading-[1.5] lg:text-[51px] xl:text-[59.5px] 2xl:text-[68px];
+}
+.txt72W {
+    @apply leading-[1.5] lg:text-[54px] xl:text-[63px] 2xl:text-[72px];
+}
+.txt76W {
+    @apply leading-[1.5] lg:text-[57px] xl:text-[66.5px] 2xl:text-[76px];
+}
+.txt80W {
+    @apply leading-[1.5] lg:text-[60px] xl:text-[70px] 2xl:text-[80px];
+}
+/* End only web view */
+
+
+
+/* Star tracking view */
+.track1 {
+    @apply tracking-[1px];
+}
+.track2 {
+    @apply tracking-[2px];
+}
+.track3 {
+    @apply tracking-[3px];
+}
+.track4 {
+    @apply tracking-[4px];
+}
+/* End tracking view */

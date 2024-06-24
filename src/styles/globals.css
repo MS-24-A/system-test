@@ -1,0 +1,369 @@
+@import url(./fontFace.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'KanitRegular';
+    overscroll-behavior: none;
+}
+
+@import url(./margings.css);
+@import url(./paddings.css);
+@import url(./textSize.css);
+
+.completCenter {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.listHeader li {
+    @apply px-[12px] sm:px-[14px] md:px-[16px] lg:px-[12px] xl:px-[14px] 2xl:px-[16px] py-[4px] sm:py-[5px] md:py-[6px] lg:py-[4px] xl:py-[5px] 2xl:py-[6px];
+}
+
+#__product img {
+    max-width: unset;
+}
+
+.inputWidth {
+    @apply w-[calc(100%-20px)] sm:w-[calc(100%-24px)] md:w-[calc(100%-28px)] lg:w-[calc(100%-20px)] xl:w-[calc(100%-24px)] 2xl:w-[calc(100%-28px)]
+}
+
+.titleList {
+    line-height: 0.5;
+    text-align: center;
+}
+
+.titleList h1 {
+    display: inline-block;
+    position: relative;
+}
+
+.titleList h1::before, 
+.titleList h1::after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border-bottom: 2px solid #707271;
+    top: 50%;
+    width: 100vw;
+}
+
+.titleList h1::before {
+    right: 100%;
+    margin-right: 28px;
+}
+
+.titleList h1::after {
+    left: 100%;
+    margin-left: 28px;
+}
+
+.hScreen {
+    height: calc(100vh - 120px);
+}
+
+.underlineList {
+    border-bottom: 1px solid #707271;
+}
+
+#__listSiseStore {
+    @apply my-[8px];
+}
+
+#__listSiseStore li {
+    @apply mx-[8px] first:ml-0 last:mr-0;
+}
+
+#__listSiseStore li button {
+    @apply border-[2px] border-black rounded-[4px] py-[2px] px-[12px] hover:text-white hover:cursor-pointer hover:bg-nickel duration-200 disabled:opacity-40 disabled:bg-transparent hover:disabled:cursor-default disabled:text-black;
+}
+
+#__listSiseStore li button.active {
+    @apply bg-black text-white;
+}
+
+.tableList thead {
+    @apply border border-black;
+}
+
+.tableList table tbody {
+    @apply bg-white border border-t-0 border-nickel;
+}
+
+.tableList table tbody tr {
+    @apply border-b border-nickel last:border-b-0 first:border-t-0 hover:bg-primary hover:text-white duration-300 bg-opacity-70;
+}
+
+.tableList table tbody tr:nth-child(odd) {
+    @apply bg-nickel bg-opacity-40 hover:bg-primary hover:text-white duration-300 hover:bg-opacity-80;
+}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #4bb71b;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4bb71b;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position:relative;
+    top: 5px;
+    right: 5px;
+    margin: 0 auto;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-miterlimit: 10;
+    fill: #fff;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.checkmark__circle-check {
+    stroke: #4bb71b;
+}
+.checkmark__circle-error {
+    stroke: #F74444;
+}
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+.checkmark__error-1 {
+    stroke-dasharray: 54px 55px;
+    stroke-dashoffset: 55px;
+    stroke-linecap: round;
+    animation: ani-error-line .15s 1.2s linear both;
+}
+.checkmark__error-2 {
+    stroke-dasharray: 54px 55px;
+    stroke-dashoffset: 55px;
+    stroke-linecap: round;
+    animation: ani-error-line .2s .9s linear both;
+}
+
+.scrollDesing::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    height: auto;
+    width: 8px;
+    display: inherit;
+    background: #fff;
+    border-radius: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+.scrollDesing::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #707271;
+    border-radius: 9999px;
+}
+.scrollDesing::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+    cursor: pointer;
+}
+.scrollDesing::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active {
+    background-color: #00fbe4;
+}
+.scrollDesing::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.hToBody {
+    @apply h-[calc(100vh-53px)] sm:h-[calc(100vh-61px)] md:h-[calc(100vh-68px)] lg:h-[calc(100vh-53px)] xl:h-[calc(100vh-61px)] 2xl:h-[calc(100vh-68px)];
+}
+
+@keyframes ani-error-line{
+	to { stroke-dashoffset: 0; }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}
+
+div.expandNextTable > section {
+    min-width: 218px;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    @apply h-[28px] sm:h-[31px] md:h-[34px] lg:h-[36px] xl:h-[39px] 2xl:h-[42px] leading-[1.5] lg:text-[12px] text-[12px] sm:text-[14px] md:text-[16px] xl:text-[14px] 2xl:text-[16px]
+}
+
+.listOptionsSend span {
+    margin-left: 4px;
+}
+
+.listOptionsSend span::after {
+    content: ",";
+}
+
+.listOptionsSend span:last-child::after {
+    content: "";
+}
+
+.imageContainer {
+    width: 100%;
+}
+
+.imageContainerH {
+    height: 100%;
+}
+
+.imageContainer > div,
+.imageContainerH > div {
+    position: unset;
+}
+
+.imageContainer > div.absolute {
+    position: absolute;
+}
+
+.imageContainer .image,
+.imageContainerH .image {
+    object-fit: contain;
+    position: relative !important;
+}
+
+.imageContainer .image {
+    width: 100% !important;
+    height: unset !important;
+}
+
+.imageContainerH .image {
+    width: unset !important;
+    height: 100% !important;
+}
+
+.imageContainerCover {
+    width: 100%;
+    height: 100%;
+}
+
+.imageContainerCover > div {
+    position: unset;
+}
+
+.imageContainerCover .image {
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.categori-select {
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+.categori-select::first-letter {
+    text-transform: capitalize;
+}
+
+.paginateRooster {
+    @apply flex items-center justify-center
+}
+
+.paginateRooster li {
+    @apply flex items-center justify-center bg-transparent text-black first:rounded-[8px] last:rounded-[8px]
+}
+
+.paginateRooster li.next.disabled,
+.paginateRooster li.previous.disabled {
+    @apply opacity-20 duration-200;
+}
+
+.paginateRooster li a {
+    @apply overflow-hidden w-[27px] sm:w-[31.5px] md:w-[36px] lg:w-[27px] xl:w-[31.5px] 2xl:w-[36px] h-[27px] sm:h-[31.5px] md:h-[36px] lg:h-[27px] xl:h-[31.5px] 2xl:h-[36px] flex justify-center items-center
+}
+
+.paginateRooster li:first-child a {
+    @apply w-auto pr-2
+}
+
+.paginateRooster li:last-child a {
+    @apply w-auto pl-2
+}
+
+.paginateRooster li.selected {
+    @apply bg-black text-white rounded-full
+}
+
+thead tr th {
+    text-align: center;
+}
+
+thead tr th:first-child {
+    text-align: start;
+}
+
+thead tr th:last-child {
+    text-align: end;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tbody td:first-child {
+    text-align: start;
+}
+
+tbody td:last-child {
+    text-align: end;
+}
+
+tbody td.flex {
+    justify-content: center;
+}
+
+tbody td:first-child.flex {
+    justify-content: start;
+}
+
+tbody td:last-child.flex {
+    justify-content: end;
+}
